@@ -5,6 +5,7 @@ const adviceId = document.getElementById('advice-id');
 
 diceBtn.addEventListener('click', () => {
     getAdvice();
+    getId();
 });
 
 
@@ -15,7 +16,6 @@ function getAdvice() {
     .then(adviceData => {
         const adviceObj = adviceData.slip;
         advicesP.innerText = `${adviceObj.advice}`
-        console.log(adviceObj);
     }).catch(error => {
         console.log(error);
     });
@@ -27,7 +27,6 @@ function getId() {
     }).then(idData => {
         const idObj = idData.slip.id;
         adviceId.innerText = 'ADVICE #' + idObj
-        console.log(idObj);
     }).catch(error => {
         console.log(error);
     })

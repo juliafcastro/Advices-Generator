@@ -1,94 +1,362 @@
-# Frontend Mentor - Advice generator app
+<div align="center">
 
-![Design preview for the Advice generator app coding challenge](preview.jpg)
+# 🎲 Advice Generator App
 
-## Welcome! 👋
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Frontend Mentor](https://img.shields.io/badge/Frontend_Mentor-3F54A3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/)
 
-Thanks for checking out this front-end coding challenge.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)](https://github.com/juliafcastro/Advices-Generator)
+[![Responsive](https://img.shields.io/badge/Responsive-Yes-blue?style=flat-square)](https://github.com/juliafcastro/Advices-Generator)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+</div>
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+---
 
-## The challenge
+## 📸 Preview / Prévia
 
-Your challenge is to build out this advice generator app using the [Advice Slip API](https://api.adviceslip.com) and get it looking as close to the design as possible.
+<div align="center">
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### 🖥️ Desktop
 
-Your users should be able to:
+<img src="design/desktop-design.jpg" alt="Desktop Preview" width="700"/>
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Generate a new piece of advice by clicking the dice icon
+### 📱 Mobile
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+<img src="design/mobile-design.jpg" alt="Mobile Preview" width="300"/>
 
-## Where to find everything
+### ✨ Active States / Estados Ativos
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+<img src="design/active-states.jpg" alt="Active States" width="700"/>
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+</div>
 
-If you would like the Figma design file to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+---
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+<details>
+<summary>🇧🇷 <strong>Português</strong></summary>
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+## 📋 Índice
 
-## Building your project
+- [Sobre](#-sobre)
+- [Funcionalidades](#-funcionalidades)
+- [Tecnologias](#-tecnologias)
+- [Como Funciona](#-como-funciona)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Como Executar](#-como-executar)
+- [API Utilizada](#-api-utilizada)
+- [Design](#-design)
+- [Autor](#-autor)
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+## 📖 Sobre
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Este projeto é uma solução para o desafio [Advice Generator App](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) do **Frontend Mentor**. O aplicativo gera conselhos aleatórios consumindo uma API externa, proporcionando uma experiência interativa e responsiva.
 
-## Deploying your project
+## ✨ Funcionalidades
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+- 🎲 **Gerar conselhos aleatórios** - Clique no botão do dado para receber um novo conselho
+- 📱 **Design responsivo** - Layout adaptável para desktop (1440px) e mobile (375px)
+- 🎨 **Estados de hover** - Efeitos visuais interativos nos elementos clicáveis
+- ⚡ **Animações suaves** - Transições CSS e animação de rotação no dado
+- 🔢 **Numeração dos conselhos** - Cada conselho exibe seu ID único da API
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+## 🛠️ Tecnologias
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+| Tecnologia          | Descrição                               |
+| ------------------- | --------------------------------------- |
+| **HTML5**           | Estrutura semântica da página           |
+| **CSS3**            | Estilização com Flexbox e Media Queries |
+| **JavaScript**      | Lógica e consumo da API com Fetch       |
+| **Google Fonts**    | Fonte Manrope (peso 800)                |
+| **Animate.css**     | Biblioteca de animações CSS             |
+| **Advice Slip API** | API para geração de conselhos           |
 
-## Create a custom `README.md`
+## ⚙️ Como Funciona
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### Estrutura HTML
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+```html
+<main>
+  <h2 id="advice-id">ADVICE</h2>
+  <p id="p-advice">"Texto do conselho..."</p>
+  <img src="images/pattern-divider-desktop.svg" class="divider" />
+  <button id="dice">
+    <img src="images/icon-dice.svg" class="dice-img" />
+  </button>
+</main>
+```
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+### Lógica JavaScript
 
-## Submitting your solution
+O sistema utiliza a **Fetch API** para consumir dados:
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+```javascript
+// Ao clicar no botão, busca um novo conselho
+diceBtn.addEventListener("click", () => {
+  getAdvice();
+  getId();
+});
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+// Função que obtém o conselho da API
+function getAdvice() {
+  fetch("https://api.adviceslip.com/advice")
+    .then((response) => response.json())
+    .then((adviceData) => {
+      advicesP.innerText = adviceData.slip.advice;
+    });
+}
+```
 
-## Sharing your solution
+### Paleta de Cores
 
-There are multiple places you can share your solution:
+| Cor                 | HSL                   | Uso                       |
+| ------------------- | --------------------- | ------------------------- |
+| 💚 Verde            | `hsl(150, 100%, 66%)` | Botão, títulos, destaques |
+| 🩵 Azul Claro        | `hsl(193, 38%, 86%)`  | Texto do conselho         |
+| 🔵 Azul Escuro      | `hsl(217, 19%, 24%)`  | Card principal            |
+| 🌑 Azul Mais Escuro | `hsl(218, 23%, 16%)`  | Fundo da página           |
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+## 📁 Estrutura do Projeto
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
+```
+advice-generator-app/
+├── 📄 index.html          # Estrutura HTML
+├── 🎨 style.css           # Estilos CSS
+├── ⚡ index.js            # Lógica JavaScript
+├── 📖 README.md           # Documentação
+├── 📋 style-guide.md      # Guia de estilos
+├── 📁 design/             # Mockups do design
+│   ├── desktop-design.jpg
+│   ├── mobile-design.jpg
+│   └── active-states.jpg
+└── 📁 images/             # Assets do projeto
+    ├── favicon-32x32.png
+    ├── icon-dice.svg
+    ├── pattern-divider-desktop.svg
+    └── pattern-divider-mobile.svg
+```
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+## 🚀 Como Executar
 
-## Got feedback for us?
+1. **Clone o repositório**
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+   ```bash
+   git clone https://github.com/juliafcastro/Advices-Generator.git
+   ```
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+2. **Acesse a pasta do projeto**
 
-**Have fun building!** 🚀
-# Advices-Generator
+   ```bash
+   cd Advices-Generator
+   ```
+
+3. **Abra o arquivo `index.html`** no seu navegador
+   - Ou utilize uma extensão como **Live Server** no VS Code
+
+## 🔗 API Utilizada
+
+**[Advice Slip API](https://api.adviceslip.com/)**
+
+Endpoint utilizado:
+
+```
+GET https://api.adviceslip.com/advice
+```
+
+Resposta exemplo:
+
+```json
+{
+  "slip": {
+    "id": 117,
+    "advice": "It is easy to sit up and take notice, what's difficult is getting up and taking action."
+  }
+}
+```
+
+## 🎨 Design
+
+O projeto segue as especificações do Frontend Mentor:
+
+- **Desktop:** 1440px
+- **Mobile:** 375px
+- **Fonte:** Manrope (800)
+
+</details>
+
+---
+
+<details open>
+<summary>🇺🇸 <strong>English</strong></summary>
+
+## 📋 Table of Contents
+
+- [About](#-about)
+- [Features](#-features)
+- [Technologies](#-technologies)
+- [How It Works](#-how-it-works)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [API Used](#-api-used)
+- [Design](#-design-1)
+- [Author](#-author)
+
+## 📖 About
+
+This project is a solution for the [Advice Generator App](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) challenge from **Frontend Mentor**. The app generates random advice by consuming an external API, providing an interactive and responsive experience.
+
+## ✨ Features
+
+- 🎲 **Generate random advice** - Click the dice button to receive new advice
+- 📱 **Responsive design** - Adaptable layout for desktop (1440px) and mobile (375px)
+- 🎨 **Hover states** - Interactive visual effects on clickable elements
+- ⚡ **Smooth animations** - CSS transitions and dice rotation animation
+- 🔢 **Advice numbering** - Each advice displays its unique API ID
+
+## 🛠️ Technologies
+
+| Technology          | Description                            |
+| ------------------- | -------------------------------------- |
+| **HTML5**           | Semantic page structure                |
+| **CSS3**            | Styling with Flexbox and Media Queries |
+| **JavaScript**      | Logic and API consumption with Fetch   |
+| **Google Fonts**    | Manrope font (weight 800)              |
+| **Animate.css**     | CSS animations library                 |
+| **Advice Slip API** | API for advice generation              |
+
+## ⚙️ How It Works
+
+### HTML Structure
+
+```html
+<main>
+  <h2 id="advice-id">ADVICE</h2>
+  <p id="p-advice">"Advice text..."</p>
+  <img src="images/pattern-divider-desktop.svg" class="divider" />
+  <button id="dice">
+    <img src="images/icon-dice.svg" class="dice-img" />
+  </button>
+</main>
+```
+
+### JavaScript Logic
+
+The system uses the **Fetch API** to consume data:
+
+```javascript
+// On button click, fetches new advice
+diceBtn.addEventListener("click", () => {
+  getAdvice();
+  getId();
+});
+
+// Function that gets advice from API
+function getAdvice() {
+  fetch("https://api.adviceslip.com/advice")
+    .then((response) => response.json())
+    .then((adviceData) => {
+      advicesP.innerText = adviceData.slip.advice;
+    });
+}
+```
+
+### Color Palette
+
+| Color          | HSL                   | Usage                      |
+| -------------- | --------------------- | -------------------------- |
+| 💚 Green       | `hsl(150, 100%, 66%)` | Button, titles, highlights |
+| 🩵 Light Blue   | `hsl(193, 38%, 86%)`  | Advice text                |
+| 🔵 Dark Blue   | `hsl(217, 19%, 24%)`  | Main card                  |
+| 🌑 Darker Blue | `hsl(218, 23%, 16%)`  | Page background            |
+
+## 📁 Project Structure
+
+```
+advice-generator-app/
+├── 📄 index.html          # HTML structure
+├── 🎨 style.css           # CSS styles
+├── ⚡ index.js            # JavaScript logic
+├── 📖 README.md           # Documentation
+├── 📋 style-guide.md      # Style guide
+├── 📁 design/             # Design mockups
+│   ├── desktop-design.jpg
+│   ├── mobile-design.jpg
+│   └── active-states.jpg
+└── 📁 images/             # Project assets
+    ├── favicon-32x32.png
+    ├── icon-dice.svg
+    ├── pattern-divider-desktop.svg
+    └── pattern-divider-mobile.svg
+```
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/juliafcastro/Advices-Generator.git
+   ```
+
+2. **Navigate to project folder**
+
+   ```bash
+   cd Advices-Generator
+   ```
+
+3. **Open `index.html`** in your browser
+   - Or use an extension like **Live Server** in VS Code
+
+## 🔗 API Used
+
+**[Advice Slip API](https://api.adviceslip.com/)**
+
+Endpoint used:
+
+```
+GET https://api.adviceslip.com/advice
+```
+
+Example response:
+
+```json
+{
+  "slip": {
+    "id": 117,
+    "advice": "It is easy to sit up and take notice, what's difficult is getting up and taking action."
+  }
+}
+```
+
+## 🎨 Design
+
+The project follows Frontend Mentor specifications:
+
+- **Desktop:** 1440px
+- **Mobile:** 375px
+- **Font:** Manrope (800)
+
+</details>
+
+---
+
+<div align="center">
+
+## 👩‍💻 Author / Autora
+
+Developed with 💚 by **Júlia Castro**
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/juliafcastro)
+
+---
+
+### 🙏 Acknowledgments / Agradecimentos
+
+Challenge by [Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db) | Desafio por [Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db)
+
+---
+
+⭐ **If you liked this project, give it a star!** | **Se gostou do projeto, deixe uma estrela!** ⭐
+
+</div>

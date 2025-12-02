@@ -65,10 +65,15 @@ main p {
   transform: scaleX(2px);
 }
 
-h1 {
+h2 {
   font-size: 12px;
   color: hsl(150, 100%, 66%);
   letter-spacing: 5px;
+}
+
+h1 {
+  color: hsl(150, 100%, 66%);
+  margin-bottom: 3rem;
 }
 
 .divider {
@@ -82,4 +87,24 @@ h1 {
 
 .dice-img:hover {
     transform: rotate(900deg);
+}
+
+@media (max-width: 450px) {
+  main {
+    max-width: 300px;
+  }
+
+  main p {
+    font-size: 20px;
+    width: 250px;
+  }
+
+  .divider {
+    width: 250px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
 }
